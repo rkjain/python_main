@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from functools import reduce
 
 #Basics
 def print_name(name='rishabh'):
@@ -46,6 +47,10 @@ print(some_array)
 x = filter(lambda x : x % 2 == 0,[1,2,3,4,5])
 print(list(x))
 print(list(x))
+
+#Reduce -> Returns a value
+list_red = reduce(lambda x,y: x + y,range(1,5))
+print('reduced_sum ', list_red)
 
 
 
