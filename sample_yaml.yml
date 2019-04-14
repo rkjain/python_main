@@ -1,0 +1,12 @@
+name: "Rishabh Jain"
+present: true
+married: false
+hobbies:
+  - "swimming"
+  - "reading"
+  - "listening to music"
+pets:
+  - dog:"KalŰ"
+  - cat:"Nancy"
+house: null
+work_exp: 10

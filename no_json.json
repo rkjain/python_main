@@ -1,0 +1,18 @@
+{
+    "name": true,
+    "age": null,
+    "items": [
+        1,
+        2,
+        3,
+        4
+    ],
+    "more_dicts": [
+        {
+            "name": 10
+        },
+        {
+            "some_more": "€10"
+        }
+    ]
+}
