@@ -12,7 +12,12 @@ Python2
 2 Kinds of String (Normal String and unicode string)
 Python3
 
-String is string and unicode is string
-byte string is same as string
-unicode is different thatn byte
+Python3: Byte String is different from string, Unicode is same as string in python3
+Python2: Byte String is same as string, unicode is different than string
 
+Python3
+=======
+Computer  Internet
+Unicode    UTF-8
+SEND: 'string'.encoding('utf-8') -> byte string
+RECEIVE: b''.decode('utf-8')
