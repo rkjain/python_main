@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#Decorate: Create  a list if tuples 
+#Decorate: Create  a list if tuples
 #Sort: Use the sort function on the list of tuples
 #Undecorate: Iterate and add the items to a list
 
@@ -16,4 +16,3 @@ def dsu(given_string):
     return final
 
 print(dsu('Hi My name is rishabh jain, and I am looking at tuples'))
-
