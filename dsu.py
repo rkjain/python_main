@@ -8,7 +8,7 @@ def dsu(given_string):
     empty = []
     for i in stg.split():
         empty.append((len(i),i))
-    empty.sort()
+    empty.sort(reverse=True)
     final = []
     print(empty)
     for (k,v) in empty:
