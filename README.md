@@ -2,7 +2,7 @@
 
 ##STRING
 - immutable
-- str type
+- str yestype
 - type(x)
 - single quote , double quote, triple quotes
 - 'a' + 4, 'a' * 3
