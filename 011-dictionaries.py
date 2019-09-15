@@ -32,3 +32,14 @@ print(y)
 
 x = {"a": 1, **{"b": 2, "c":3} }
 print(x)
+from collections import OrderedDict
+# preserves the order in which keys are inserted
+
+x = OrderedDict()
+x["a"] = 10
+x["b"] = 20
+x["c"] = 30
+x["d"] = 40
+
+for k,v in x.items():
+	print(k,v)

@@ -40,3 +40,9 @@ print({1,2,3,4,5} >= {2,3,4})
 # Check if set on right is superset of set on left
 
 print({1,2,3,4,5} <= {2,3,4})
+
+
+
+x = {20,30,40}
+x.discard(60)
+print(x)

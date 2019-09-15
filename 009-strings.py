@@ -1,5 +1,26 @@
 #!/usr/bin/env python3.7
 
+# String is a immutable object
+x = 'rishabh'
+
+print(type(x))
+
+# Print first character
+print(x[0])
+
+# Slice 
+print(x[0:])
+print(x[1:])
+print(x[0:2])
+
+# Mention Step Size
+print(x[::2])
+
+# reverse a string
+print(x[::-1])
+
+
+
 s = " Finished ! "
 print(s.capitalize())
 print(s.upper())
