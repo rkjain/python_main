@@ -54,6 +54,19 @@ print('reduced_sum ', list_red)
 
 
 
+
+
+my_list = [10,20,30,40,50]
+my_name = 'rishabh'
+new_list  = list(map(lambda number: number + 2, my_list))
+new_list1 = list(filter(lambda value: value > 12, my_list))
+new_list2 = reduce(lambda x, y : y + x, my_name, "")
+
+print(my_list)
+print(new_list)
+print(new_list1)
+print(new_list2)
+
 #Nested Statements and Scope
 #LEGB Local Scope Has Higher Priority > Enclosed > Global > Buit In Scope
 
