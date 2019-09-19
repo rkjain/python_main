@@ -21,4 +21,3 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
 
 finish = time.perf_counter()
 print(round(finish - start,2))
-
