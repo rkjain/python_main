@@ -29,3 +29,21 @@ else:
     print('I did not go through exception ')
 finally:
     print('Finally: Running Post Check')
+
+
+# Creating Custom Exception
+
+class MyFudgedUpException(Exception):
+
+    def __init__(self, age):
+        self.age = age
+        if age < 18:
+            super().__init__(f'Error Code Young: {self.age}')
+        else:
+            super().__init__(f'Error Code Old: {self.age}')
+
+
+age = 23
+#raise Exception('Some Kind of Exception')
+
+raise MyFudgedUpException(age)
