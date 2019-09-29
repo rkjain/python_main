@@ -88,3 +88,10 @@ print('Local Vlaue: ', end= "")
 print_number()
 print('Built In', 'int')
 
+# Zip Functions
+
+list_a = ["a", "b", "c", "d", "e"]
+list_b = [70, 80, 90, 100, 120, 140]
+
+some_list = list(zip(list_a, list_b))
+print(dict(some_list))
