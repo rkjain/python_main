@@ -61,3 +61,11 @@ print(type(some_list))
 for i in some_list:
 	print(i)
 
+
+def calculate_tempf(some_list):
+    for temp in some_list:
+        temp_in_farenheit = (9/5 * temp) + 32
+        yield temp_in_farenheit
+
+x = calculate_tempf([0,10,20,30,40,50])
+print(list(x))
