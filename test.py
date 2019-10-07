@@ -99,7 +99,7 @@ Design Question:
 
 '''
 
-
+ 
 
 def find_vowel(glist):
     vs = {"a","e","i","o","u"}
