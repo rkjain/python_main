@@ -59,3 +59,21 @@ async def main():
         run_async('ping -c 5 www.google.com'))
 
 asyncio.run(main())
+
+'''
+import asyncio
+
+print("Hello")
+async def my_coro(name, duration):
+    print('Started: ', name)
+    await asyncio.sleep(duration)
+    print('Ended: ', name)
+
+async def main():
+    taskOne = asyncio.create_task(my_coro('program1', 15 ))
+    taskTwo = asyncio.create_task(my_coro('program2', 10 ))
+    taskThr = asyncio.create_task(my_coro('program3', 5 ))
+    await asyncio.gather(taskOne, taskTwo, taskThr)
+asyncio.run(main())
+print("World")
+'''
