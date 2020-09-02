@@ -1,6 +1,6 @@
-#SYSTEM ADMINISTRATION USING PYTHON
+# SYSTEM ADMINISTRATION USING PYTHON
 
-##STRING
+## STRING
 - immutable
 - str yestype
 - type(x)
@@ -15,19 +15,19 @@
 - from (__future__) import print_function
 
 
-##Numbers
+## Numbers
 - int, float, typecasting
 - + , - , **, /, ** , //
 - from decimal import Decimal as d
 
 
-##Boolean
+## Boolean
 - True False None
 
-##Variables
+## Variables
 - x = 1, x = '', x = '''   '''
 
-##Lists
+## Lists
 - mutable
 - create a list []
 - add [].append()
@@ -39,7 +39,7 @@
 - reverse (In Place, returns None)
 
 
-##Sets
+## Sets
 - unordered collection of data
 - hold unique values
 - has  add method
@@ -47,7 +47,7 @@
 - you can also convert a list into a set
 
 
-##Tuples
+## Tuples
 - Create(10,)
 - immutable
 - Add new() = old() + (10,20)
@@ -55,7 +55,7 @@
 - are like lists and preserver data integrity
 - also used with print
 
-##Dictionaries
+## Dictionaries
 - keys are ordered in python3
 - Use Immutable Keys, don't use lists
 - add keys, delete keys using del
@@ -66,13 +66,13 @@
 - Create dicts dict(key1=10, key2=20)
 - Create dicts dict([('age',10),('name','bob')])
 
-##Conditionals and Comparisons
+## Conditionals and Comparisons
 - if / elif / else
 - if condition: followed by indented next line
 - > , >= , < , <=
 - 2 in / not in [12,20]
 
-##Loops
+## Loops
 - while COND: pass
 - continue in the while loop to continue with the  next iteration
 - break to break the loop
@@ -82,7 +82,7 @@
 - iterate over a list of tuples for x,y in[(10,20),(30,40)]
 - iterate over a dict for key,value in dict.items() 
 
-##Logical Operations
+## Logical Operations
 - name = '' , not name
 - you can use if not, we want something to execute when the value is false
 - if one condition or other is true
@@ -91,14 +91,16 @@
 - use and if both operations are true
 - and will return the first value that is falsy or the last value
 
-##UserInput
+## UserInput
 - input('Enter a value')
 - age = int(input("Enter Age"))
 
-##Functions
+## Functions
 - def function_name():
 - function can have return value
 
+
+## Revision
 1. NameError :if a variable does not exist
 
 2. Conditional Operator x = 3 if 3 > 2 else 5
