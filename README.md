@@ -99,4 +99,105 @@
 - def function_name():
 - function can have return value
 
+1. NameError :if a variable does not exist
 
+2. Conditional Operator x = 3 if 3 > 2 else 5
+
+3. print("abc", end="\n")
+
+4. Boolean Values: True/ False
+Everything has a boolean value bool(0), bool(-1)
+
+5. Conditional Opearators: and, or, not
+
+6. Comparison Operators: ==, !=, <=, >=
+
+   1 < 2 and 2 < 3 is same as 1 < 2 < 3
+
+7. a is b # True i.e  a and b are the same object
+   e.g a = [1,2,3] b=a
+8. a == b # True i.e  a is equal to b in value
+
+9. Comments: #, """ """, 
+
+10. Numbers: int, float, /, // , 2 ** 3, enforce precedence (1 + 2) * 3
+
+11. Strings, immutable, Slice, Step Size, String formatting, 
+    upper, lower, count,  
+    (Note: is None == None, almost does the same thing)
+
+12. Sets , create a set, add element, discard element
+    intersection, union, difference, symetric difference, discard/remove
+    subset/superset <=, >=
+
+13. Dictionary, keys should be immutable, keys can be strings, ints, floats , tuples
+    Use x.get('key')
+    Dictionary Expansion y = {"a": 10, **b}
+    from collections import OrderedDict
+    list(x.keys()), x.values(), x.items()
+
+14. Lists are mutable
+    l.append(5)
+    l.pop()
+    l.pop(0)
+    l.insert(0,10)
+    l.extend(b) 
+    in operator in lists
+
+15. tuples are good for unpacking
+    a, b = 2, 3
+    a, *b, c = [1,2,3,4,5]
+
+16. Conditionals
+    if , elif , else
+
+17. Loops: for, while, break, continue
+    using pass
+
+18. function, documentation inside function
+    arguments, and keyword arguments
+    lambda expression
+    map, filter, reduce, zip, zip + list, zip + list + dict
+    enumerate, min, max
+    function scope: L,E,G, B
+
+19. List Comprehension
+    LC with conditions (if / else)
+    Generator Expression with LC
+    Set Comprehension
+    Dict Comprehension
+
+20. Decorators
+    Higher Order Function
+
+21. Generator, yield keyword, lists /iterators, iter function on list , next function
+
+22. File Operations
+    using with to open files and perform read write and append
+
+23. Exception Handling
+    assert
+    raise
+    try/except/else/finally, print exception name
+    custom excepotion
+    
+
+24. Classes
+    Class Variables
+    Instance Variables
+    Class Methods
+    Static Method
+    Regular Methods
+    Method Overloading
+    Private Vairables
+    Private Method
+    (How can private be not so private)
+    Magic Methods(str, del, len, )
+    Doc String Inside Classes/ Doc String Inside Methods
+     
+    
+    Data Hiding 
+     - abstraction
+     - encapsulation
+
+    Polymorphism
