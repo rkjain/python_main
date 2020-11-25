@@ -185,17 +185,17 @@ Everything has a boolean value bool(0), bool(-1)
     
 
 24. Classes
-    Class Variables
-    Instance Variables
-    Class Methods
-    Static Method
-    Regular Methods
-    Method Overloading
-    Private Vairables
-    Private Method
-    (How can private be not so private)
-    Magic Methods(str, del, len, )
-    Doc String Inside Classes/ Doc String Inside Methods
+    - Class Variables
+    - Instance Variables
+    - Class Methods
+    - Static Method
+    - Regular Methods
+    - Method Overloading
+    - Private Vairables
+    - Private Method
+      - (How can private be not so private)
+    - Magic Methods(str, del, len, )
+    - Doc String Inside Classes/ Doc String Inside Methods
      
     
     Data Hiding 
