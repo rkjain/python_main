@@ -37,20 +37,20 @@ trick_func(12,14,name='rishabh',age='20')
 print_name_l = lambda name: 'Hello ' + name
 print(print_name_l('Rishabh Kumar Jain'))
 
-#Map, Filter
-some_array = [10,20,30,40,50]
-map_gen = map(lambda value: str(value), some_array)
-for elem_one in map_gen:
-    print(elem_one, type(elem_one))
-print(some_array)
-
-x = filter(lambda x : x % 2 == 0,[1,2,3,4,5])
-print(list(x))
-print(list(x))
-
-#Reduce -> Returns a value
-list_red = reduce(lambda x,y: x + y,range(1,5))
-print('reduced_sum ', list_red)
+# Map, Reduce, Filter                                                             
+                                                                                  
+# Reduce: returns a value                                                         
+print(reduce((lambda x,y: y + x),"hello_world"))                                  
+print(reduce((lambda x,y: x + y),[10,20,30,40,50], 100))                          
+                                                                                  
+# map: returns a gen                                                              
+                                                                                  
+map_gen = map((lambda x: x ** 2), [5,4,3,2,1])                                    
+print(map_gen)                                                                    
+print(list(map_gen))                                                              
+                                                                                  
+# filter: returns a filter object                                                 
+print(list(filter((lambda x: x >= 3), [1,2,3,4,5])))  
 
 
 
