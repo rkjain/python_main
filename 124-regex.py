@@ -1,4 +1,6 @@
-                                                                            
+#!/usr/bin/env python3
+
+"""
 re                                                                                
  - search for a pattern/substring with in a given string                          
  - validate a given substring like password                                       
@@ -39,6 +41,7 @@ $ - match given regex at end of string
 (R | S) - match regex r or s                                                   
 [ab] means a or b, single chracter                                             
 [^abc] means not a or b or c                                                                                                                 
+
 """ 
 some_str = "oneHi, bring one idea to the table. Leave oneday"                  
                                                                                
@@ -64,4 +67,3 @@ print(re.split(r'\s',x))
 x = "Hello, Hello again Again again!"                                          
 print(re.sub(r'Hello','Bye', x))                                               
 print(x) 
-
