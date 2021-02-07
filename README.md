@@ -1,5 +1,35 @@
 # NOTES
 
+## Declare Variables
+
+## Some Useful Functions
+  - print
+  - sys.stdout.write
+  - sys.stdin.readline
+  - bool, type
+  - string functions - upper, lower
+  - string formatting
+
+## Comments
+  - single line
+  - multi line
+
+## Datatypes
+  - String
+  - Integer
+  - Float
+  - Boolean
+  - Sets
+  - Dictionary
+  - Tuple
+  - List
+
+## Operators
+  - Logical: and, or, not
+  - Comparison Operators
+  - Arithmetic: +, -, *, /, // , **, enforce precedence ()
+
+
 ## STRING
 - immutable
 - str yestype
@@ -29,14 +59,20 @@
 
 ## Lists
 - mutable
+- append, pop (stack)
+- append, pop(0) (queue)
+- insert(index, value)
+- extend
+- item in list
+- list.join, list.sort, list.reverse
 - create a list []
 - add [].append()
 - add list1 + list2
 - slice a list
 - remove from a list using .remove(value)
-- pop(), pop(index)
-- new_list.sort() (In Place, returns None)
+- new_list.sort()(In Place, returns None)
 - reverse (In Place, returns None)
+- sorted(), returns sorted , reversed returns iterator
 
 
 ## Sets
@@ -45,7 +81,11 @@
 - has  add method
 - x = set()
 - you can also convert a list into a set
-
+- Operations
+  - Creation
+  - Add Elements
+  - Remove/Discard Elements
+  - Intersection, Union, Difference, Symetric Difference, Superset/Subset
 
 ## Tuples
 - Create(10,)
@@ -62,34 +102,30 @@
 - del dict[key], del dict
 - dict.pop(key)
 - Keys list(dict.keys())
+- key in {}
 - Values list(dict.values())
 - Create dicts dict(key1=10, key2=20)
 - Create dicts dict([('age',10),('name','bob')])
 
-## Conditionals and Comparisons
+## Conditionals
 - if / elif / else
 - if condition: followed by indented next line
-- > , >= , < , <=
 - 2 in / not in [12,20]
 
+## Ternary Operator
+- x = 3 if a > b else 3
+
 ## Loops
+
+- for , while, usage of break, continue
+- usage of pass in a function
 - while COND: pass
 - continue in the while loop to continue with the  next iteration
 - break to break the loop
 - pass does nothing
-- print(f'the total count is {count}')
 - for var in list/tuple/dict.keys()
 - iterate over a list of tuples for x,y in[(10,20),(30,40)]
-- iterate over a dict for key,value in dict.items() 
-
-## Logical Operations
-- name = '' , not name
-- you can use if not, we want something to execute when the value is false
-- if one condition or other is true
-- use or to set default values
-- or will return the first truthy value or last value
-- use and if both operations are true
-- and will return the first value that is falsy or the last value
+- iterate over a dict for key,value in dict.items()
 
 ## UserInput
 - input('Enter a value')
@@ -98,7 +134,60 @@
 ## Functions
 - def function_name():
 - function can have return value
+- args, kwargs , func_a(10, a=3)
+- *args is a tuple
+- **kwargs is a dictionary
+- lambda
+  - one line functions, annonymous functions
+  - (lambda: print("hello"))()
+  - x = lambda: a: a + 3, x(13)
+  - age = lambda x, y: x + y, age(12,12)
+  - (lambda x, y: x + y)(13,13)
+- map, filter, reduce
+    - map gives a gen
+    - filter give a filter object
+    - functools.reduce gives a value
+- zip
+    - returns a zip object, convert it into a list
+    - returs a list of tuple of individual objects
+    - zip(['a','b','c'],[10,20,30]) => [(a, 10), (b,20), (c,30)]
+- file operations
+    - read, write, append
 
+- list_comprehension
+  - list comprehensions to emulate map, filter
+  - using ternary operators , condtions in lc
+
+- Generators
+
+- Decorators
+
+- Regex
+  - look for a substring within a string
+  - validate a given string
+  - methods in re
+    - search (returns None if nothing found)
+    - match (looks in the beg, returns None if nothing found)
+    - split
+    - findall (returns a list , [] if nothing found)
+    - sub(replaceall)
+  - sequence characters: \d \D \s \S \w \W \b \B
+  - special characters: \ , . (any char except \n), ^, $, 
+                        [A-Z][aZ][1-9] (R|R2) (R) [^g]
+  - quantifiers: {m, n}, {m}, + , *, ?
+  
+## Applications
+
+- liniting: python3 -m pylint file.py
+
+- unittest
+    - functions should start with test
+    - create a class that inherits unittest.TestCase
+    - to run testcases use unittest.main() or  python3 -m unittest file_name
+
+- typehints
+    - declaring variable type, x: int
+    - declaring function return type, function(x: 4) -> int
 
 ## Revision
 1. NameError :if a variable does not exist
