@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Encapsulation provides protection to an object's data/properties from other objects by defining getter/setter methods to access modify the object's data
+"""
+
 class Car:
 
 	## Mutator / Setter Method
