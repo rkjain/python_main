@@ -1,4 +1,19 @@
 #!/usr/bin/env python3
+"""
+Polymorphism
+Poly Mprphic - Many Forms
+or Multiple/Different Behavior
+
+The difference in behaviour of a fuction based on the data or object the function is dealing with is called
+polymprphism
+
+- duck typing
+- duck typing to dependency injecction (inject one object into another)
+- operator overlaoding
+- method override to do runtime polymprphism
+
+
+"""
 
 "Duck Typing"
 class Duck:
