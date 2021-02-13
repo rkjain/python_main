@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 
 from abc import ABC, abstractmethod
-
+"""
+- Define a contract for the child classes
+- An abstract class just defines the method signatures for child classes to use
+- Abstract methods dont have to be implemented
+- An abstract class with all methods as abstract methods is called an interface.
+"""
 class Car(ABC):
 
 	def __init__(self, make, model, year):
