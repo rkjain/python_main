@@ -1,31 +1,56 @@
 #!/usr/bin/env python3
 
-class Vehicle:
+class Guitar:
+    """
+    0. Constructor
+    1. Class has properties and methods
+    2. Instance Vairables and Methods
+    3. Class Variable and Methods(Static)
+    4. Private Variables
+    """
+    # Class Variables/ Fields
+    instances = 0
 
-	# Class Variables/ Fields
-	total_instances = 0
+    # Contructor
+    def __init__(self, brand=None):
+        Guitar.instances += 1
 
-	# Constructor/ Instance Variables
-	def __init__(self):
+        # Instance Variables
+        # Private: Object._ClasName__variableName
+        self.__brand = brand
+        self.__strings = 6
 
-		Vehicle.total_instances += 1
+    # Instance Method
+    def get_details(self):
+        print(self.__brand)
+        print(self.__strings)
 
-		## private variables
-		self.__wheels = 4
-		self.__steering_wheel = 1
+    def helper(self, name):
+        return "Hello {name}".format(name=name)
 
-	# instance methods
-	def display(self):
-		print("Total Wheels: ", self.__wheels)
-		print("Steering Wheel: ", self.__steering_wheel)
-
-	# class method/static method
-	@staticmethod
-	def get_instances():
-		return Vehicle.total_instances
+    def greet(self, name):
+        """
+        Use one instance method to call another
+        """
+        return self.helper(name)
 
 
-v = Vehicle()
-print(v._Vehicle__wheels)
-v.display()
-print("Total Insatances: ", v.get_instances())
+    # Class Method / Static Method
+    @staticmethod
+    def get_instances():
+        return Guitar.instances
+
+if __name__ == "__main__":
+
+    # Class Variabls and methods can be called with out instantiating the class
+    print(Guitar.instances)
+    print(Guitar.get_instances())
+    g = Guitar("Yamha")
+    print(g._Guitar__strings)
+    g.get_details()
+    b = Guitar("Gibson")
+    b.get_details()
+    c = Guitar("Fender")
+    c.get_details()
+    print(c.greet("Bob Marlery"))
+    print(g.get_instances())
