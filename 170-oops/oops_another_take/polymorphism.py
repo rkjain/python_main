@@ -11,6 +11,7 @@ polymprphism
 - duck typing to dependency injecction (inject one object into another)
 - operator overlaoding
 - method override to do runtime polymprphism
+  a class can extend another class and override a method
 
 
 """
