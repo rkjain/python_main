@@ -30,3 +30,12 @@ class Hyundai(Car):
 
 c = Hyundai("white", "2021", "elantra")
 c.display()
+
+class DangerZone(Exception):
+    def __init__(self ,message):
+        if message == "mountain":
+            Exception.__init__(self, "Broken road ahead")
+        else:
+            super().__init__("Don't drive above 30")
+
+raise DangerZone("Road")
