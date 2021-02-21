@@ -10,6 +10,10 @@ class TestMultiply(unittest.TestCase):
     '''
     Create 2 functions 
     '''
+    
+    def setUp(self):
+        print("setUp")
+  
     def test_product(self,a=2,b=4):
         prodOne = multiply.multiply_num(a,b)
         prodTwo = 8
@@ -20,6 +24,9 @@ class TestMultiply(unittest.TestCase):
         prodTwo = 400
         self.assertEqual(prodOne, prodTwo)
 
+    def tearDown(self):
+        print("tearDown")
+        
 if __name__ == '__main__':
     unittest.main()
 
